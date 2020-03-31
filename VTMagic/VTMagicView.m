@@ -635,11 +635,11 @@ static VTPanRecognizerDirection direction = VTPanRecognizerDirectionUndefined;
     [menuItem setTitle:_menuTitles[itemIndex] forState:UIControlStateNormal];
     if (VTColorIsZero(_normalVTColor)) {
         _normalColor = [menuItem titleColorForState:UIControlStateNormal];
-        _normalVTColor = [_normalColor vtm_changeToVTColor];
+        //_normalVTColor = [_normalColor vtm_changeToVTColor];
     }
     if (VTColorIsZero(_selectedVTColor)) {
         _selectedColor = [menuItem titleColorForState:UIControlStateSelected];
-        _selectedVTColor = [_selectedColor vtm_changeToVTColor];
+        //_selectedVTColor = [_selectedColor vtm_changeToVTColor];
     }
     return menuItem;
 }
