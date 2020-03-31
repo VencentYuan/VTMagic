@@ -777,6 +777,7 @@ static VTPanRecognizerDirection direction = VTPanRecognizerDirectionUndefined;
     
     if (!_needSkipUpdate && VTSwitchStyleDefault == _switchStyle) {
         [self graduallyChangeColor];
+        [self reselectMenuItem];
     }
 }
 
